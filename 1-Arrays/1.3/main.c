@@ -2,7 +2,7 @@
 
 int main()
 {
-    int vec[MAX]={99,6,15,1,56},pos;
+    int vec[MAX]={99,6,15,1,56,31},pos;
     puts("arreglo original :");
     imprimeVector(vec,MAX);
 
