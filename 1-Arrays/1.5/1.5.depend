@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1709741550 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.5\main.c
+	"header.h"
+
+1709741414 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.5\header.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1709816263 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.5\funciones.c
+	"header.h"
+
