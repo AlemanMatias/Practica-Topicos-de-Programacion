@@ -15,9 +15,7 @@
 */
 int main()
 {
-    char cadena[]={"¿Nadan o no nadan?"};
-
-    puts(cadena);
+    char cadena[]={"Seres, somos seres"};
 
     if(esPalindromo(cadena))
         puts("La cadena SI es un palindromo");

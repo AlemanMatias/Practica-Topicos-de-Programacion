@@ -42,11 +42,10 @@ bool esPalindromo(char *cadena)
 
 }
 
-void convertMayus(char *letra)
+void crearSecuencia(SecuenciaCadena *secChar,char *cadena)
 {
-
-    if(*letra>='a' && *letra<='z')
-        *letra=*letra-('a'-'A');
+    secChar->cursor = cadena;
+    secChar->finCadena = false;
 }
 
 bool esLetra(char *car)
@@ -57,8 +56,48 @@ bool esLetra(char *car)
         return false;
 }
 
-void crearSecuencia(SecuenciaCadena *secChar,char *cadena)
+bool esNumero(char *car)
 {
-    secChar->cursor = cadena;
-    secChar->finCadena = false;
+    if((*car)>='0' && (*car)<='9')
+        return true;
+    else
+        return false;
 }
+
+void convertCadToMayus(char *cadena)
+{
+    while(*cadena){
+        convertMayus(cadena);
+        cadena++;
+    }
+}
+
+void convertMayus(char *letra)
+{
+    if(*letra>='a' && *letra<='z')
+        *letra=*letra-('a'-'A');
+}
+
+bool myStringComp(char *cadena1 ,char *cadena2)
+{
+    while((*cadena1) == (*cadena2)){
+        cadena1++;
+        cadena2++;
+        if(!(*cadena1) && !(*cadena2))
+            return true;
+    }
+    return false;
+}
+
+void myStringCopy(char *destino ,char *origen)
+{
+    while(*origen){
+        *destino=*origen;
+        destino++;
+        origen++;
+    }
+    *destino='\0';
+}
+
+
+

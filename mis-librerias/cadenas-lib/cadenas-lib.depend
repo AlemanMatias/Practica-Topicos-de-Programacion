@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1710267226 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\cadenas-lib\mystring.c
+1710362132 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\cadenas-lib\mystring.c
 	"myString.h"
 
-1710265725 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\cadenas-lib\mystring.h
+1710362668 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\cadenas-lib\mystring.h
 	<stdio.h>
 	<stdbool.h>
 	<stdlib.h>
