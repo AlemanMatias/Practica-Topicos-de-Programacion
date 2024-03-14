@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1710443942 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.9\funciones.c
+	"funciones.h"
+
+1710442946 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.9\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"..\..\mis-librerias\cadenas-lib\myString.h"
+
+1710439990 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\cadenas-lib\mystring.h
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+
+1710444044 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.9\main.c
+	"funciones.h"
+

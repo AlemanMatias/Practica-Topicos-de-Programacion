@@ -72,6 +72,12 @@ void convertCadToMayus(char *cadena)
     }
 }
 
+void convertMinus(char *letra)
+{
+    if(*letra>='A' && *letra<='Z')
+        *letra=*letra+('a'-'A');
+}
+
 void convertMayus(char *letra)
 {
     if(*letra>='a' && *letra<='z')
@@ -99,5 +105,9 @@ void myStringCopy(char *destino ,char *origen)
     *destino='\0';
 }
 
+void finalizarCadena(char *cadena)
+{
+    *cadena = '\0';
+}
 
 

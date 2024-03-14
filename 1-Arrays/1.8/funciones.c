@@ -16,6 +16,8 @@ int CantPalalbrasEnCadena(char* cadena,char* palabra)
         SecuenciaCadena lectPalabra;                  //se crea una nueva secuencia para
         crearSecuencia(&lectPalabra,palComp.palabra); //una nueva palabra.
 
+        //printf("-%p-",lectPalabra.cursor);          //Prueba de que siempre reciclo la misma direccion para guardar una nueva palabra
+
         while(esLetra(lectCadena.cursor)){            // En este ciclo Se guardara una palabra
             *lectPalabra.cursor=*lectCadena.cursor;   //en la secuencia creada anteriormente.
             convertMayus(lectPalabra.cursor);         // A su vez se convertira a mayuscula cada letra
