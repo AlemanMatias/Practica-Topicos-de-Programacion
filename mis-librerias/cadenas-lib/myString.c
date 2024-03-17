@@ -42,7 +42,7 @@ bool esPalindromo(char *cadena)
 
 }
 
-void crearSecuencia(SecuenciaCadena *secChar,char *cadena)
+void crearSecuencia(SecuenciaCadena *secChar, char *cadena)
 {
     secChar->cursor = cadena;
     secChar->finCadena = false;
@@ -95,6 +95,51 @@ bool myStringComp(char *cadena1 ,char *cadena2)
     return false;
 }
 
+int myStringComp2(char *cadena1, char *cadena2)
+{
+    int tam1=tamanioCadena(cadena1);
+    int tam2=tamanioCadena(cadena2);
+
+    char aux1[tam1+1];
+    char aux2[tam2+1];
+
+    SecuenciaCadena lect1;
+    crearSecuencia(&lect1,aux1);
+    SecuenciaCadena lect2;
+    crearSecuencia(&lect2,aux2);
+
+    myStringCopy(aux1,cadena1);
+    myStringCopy(aux2,cadena2);
+
+    convertCadToMayus(aux1);
+    convertCadToMayus(aux2);
+
+    while(*lect1.cursor && *lect2.cursor){
+        if(*lect1.cursor > *lect2.cursor)
+            return 1;// 1 = la cadena 1 es mayor a la 2
+        else if(*lect1.cursor < *lect2.cursor)
+            return -1;// -1 = la cadena 1 es menor a la 2
+        else{
+            lect1.cursor++;
+            lect2.cursor++;
+        }
+        if(!*lect1.cursor && !*lect2.cursor)
+            return 0;// 0 = cadenas iguales
+    }
+    if(!*lect1.cursor)
+        return -1;
+    return 1;
+}
+
+bool letrasIguales(char letra1, char letra2)
+{
+    convertMinus(&letra1);
+    convertMinus(&letra2);
+    if(letra1==letra2)
+            return true;
+    return false;
+}
+
 void myStringCopy(char *destino ,char *origen)
 {
     while(*origen){
@@ -110,4 +155,14 @@ void finalizarCadena(char *cadena)
     *cadena = '\0';
 }
 
+int tamanioCadena (char *cadena)
+{
+    int tamanio=0; // El 1 es el caracter nulo
 
+    while(*cadena){
+        cadena++;
+        tamanio++;
+    }
+
+    return tamanio;
+}
