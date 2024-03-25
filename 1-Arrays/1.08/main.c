@@ -9,7 +9,7 @@
 int main()
 {
     char palabra[]={"Vida"};// Palabra a buscar en cadena
-    char cadena[]={"La vida es bella, ¿que seria de la vida si no tuvieramos vida alrededor?¿Realmente podriamos llamar a eso vida?"};
+    char cadena[]={"¿que seria de la vida si no tuvieramos vida alrededor?¿Realmente podriamos llamar a eso vida?"};
 
     printf("la palabra '%s' se repite %d veces en la cadena .",palabra,CantPalalbrasEnCadena(cadena,palabra));
 

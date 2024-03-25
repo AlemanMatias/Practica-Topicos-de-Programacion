@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1711390024 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.01.tda\main.c
+	"funciones.h"
+
+1711143796 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.01.tda\funciones.h
+	"..\..\mis-librerias\lista-tda-lib\myTda.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"..\..\mis-librerias\lista-tda-lib\myTda.h"
+
+1711158151 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\lista-tda-lib\mytda.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"../../mis-librerias/cadenas-lib/myString.h"
+
+1710619275 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\cadenas-lib\mystring.h
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+
+1711143129 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\lista-tda-lib\mytda.c
+	"myTda.h"
+
