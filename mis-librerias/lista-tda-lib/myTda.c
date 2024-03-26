@@ -87,7 +87,24 @@ int insertarListaOrd(Lista *pl,int elem)
     pl->ce++;
 
     return TODO_OK;
+}
 
+bool eliminarListaPos(Lista *pl, int pos)
+{
+    if(!pl->ce){
+        puts("#lista vacia#");
+        return false;
+    }
+
+    int *inicio = pl->vec+(pos-1);
+    int *fin = pl->vec+(pl->ce - 1);
+    int *i;
+
+    for(i=inicio;i<=fin;i++)
+        *i=*(i+1);
+    pl->ce--;
+
+    return true;
 }
 
 bool continuar()

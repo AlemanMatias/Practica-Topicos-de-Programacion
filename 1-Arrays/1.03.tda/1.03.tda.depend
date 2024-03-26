@@ -1,6 +1,12 @@
 # depslib dependency file v1.0
-1711482335 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\lista-tda-lib\mytda.c
-	"myTda.h"
+1711481546 source:c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.03.tda\main.c
+	"funciones.h"
+
+1711480947 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\1-arrays\1.03.tda\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"../../mis-librerias/lista-tda-lib/myTda.h"
 
 1711479961 c:\users\matias\onedrive\topicos de programacion\1c-2024\practica\mis-librerias\lista-tda-lib\mytda.h
 	<stdio.h>

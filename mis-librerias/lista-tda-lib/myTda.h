@@ -31,6 +31,8 @@ int insertarListaPos(Lista *pl ,int ,int );//Inserta un elemento en una posicion
 
 int insertarListaOrd(Lista *pl, int);//Inserta un elemento en una lista ORDENADA
 
+bool eliminarListaPos(Lista *pl, int);//Dada una posicion de una lista, se eliminar el elemento de dicha posicion
+
 bool continuar(); // solo pregunta si se desea continuar con el proceso
 
 #endif // MYTDA_H
